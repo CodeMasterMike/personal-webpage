@@ -50,13 +50,6 @@ function ContactMe() {
               </Card.Text>
             </Card.Body>
           </Card>
-
-          <Card className="shadow-sm">
-            <Card.Body>
-              <Card.Title as="h2">Phone</Card.Title>
-              <Card.Text className="mt-3">(585) 690-1131</Card.Text>
-            </Card.Body>
-          </Card>
         </Col>
       </Row>
     </Container>
