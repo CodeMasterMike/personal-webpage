@@ -1,12 +1,4 @@
-import { useState, useEffect } from "react";
 import { Button, Card, Container, Row, Col } from "react-bootstrap";
-
-interface GitHubProject {
-  id: number;
-  name: string;
-  html_url: string;
-  description: string;
-}
 
 function Projects() {
   return (
