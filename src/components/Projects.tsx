@@ -9,18 +9,6 @@ interface GitHubProject {
 }
 
 function Projects() {
-  const [projects, setProjects] = useState<GitHubProject[]>([]);
-
-  useEffect(() => {
-    fetch("https://api.github.com/users/CodeMasterMike/repos")
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        setProjects(data);
-      })
-      .catch((error) => console.error("Error fetching projects:", error));
-  }, []);
-
   return (
     <Container className="my-5">
       <Row className="justify-content-center">
