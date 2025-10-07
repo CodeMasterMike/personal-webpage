@@ -29,7 +29,7 @@ function AboutMe() {
             <Card.Body>
               <Card.Title>Hello! I'm Michael McAlpin.</Card.Title>
               <Card.Subtitle className="mb-3 text-muted">
-                A Full Stack .NET and JS developer
+                A Full Stack .NET and JS engineer
               </Card.Subtitle>
 
               <Card.Text>
