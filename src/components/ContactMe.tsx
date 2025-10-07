@@ -43,6 +43,7 @@ function ContactMe() {
               <Card.Text className="mt-3">
                 <a
                   href="ma&#105;lto&#58;%6D%6Dca%6Cp&#105;n&#106;r&#64;&#103;ma%&#54;9%6C&#37;2&#69;c%6Fm"
+                  target="_blank"
                   className="text-decoration-none"
                 >
                   mmcal&#112;i&#110;j&#114;&#64;gmail&#46;com

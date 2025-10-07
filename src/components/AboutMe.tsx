@@ -7,6 +7,8 @@ import {
   Badge,
   Button,
 } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { Page } from "../constants/page";
 
 function AboutMe() {
   const tech = [
@@ -52,9 +54,9 @@ function AboutMe() {
               </ListGroup>
 
               <div className="mt-4">
-                <Button variant="outline-primary" href="#projects">
-                  See my projects
-                </Button>
+                <Link to={`/${Page.Projects}`} className="text-decoration-none">
+                  <Button variant="outline-primary">See my projects</Button>
+                </Link>
               </div>
             </Card.Body>
           </Card>
