@@ -1,22 +1,24 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import type { Dispatch, SetStateAction } from "react";
+import { Link, useLocation } from "react-router-dom";
 
-import { Page, type PageKey } from "../constants/page";
+import { Page } from "../constants/page";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-type Props = {
-  currentPage: PageKey;
-  setCurrentPage: Dispatch<SetStateAction<PageKey>>;
-};
+function NavigationBar() {
+  const location = useLocation();
+  const currentPath = location.pathname.substring(1) || Page.AboutMe;
 
-function NavigationBar({ currentPage, setCurrentPage }: Props) {
   return (
     <Navbar expand="lg" className="site-navbar" sticky="top">
       <Container>
-        <Navbar.Brand href="#home" className="d-flex align-items-center">
+        <Navbar.Brand
+          as={Link}
+          to={`/${Page.AboutMe}`}
+          className="d-flex align-items-center"
+        >
           <span className="brand-logo me-2">MM</span>
           <span className="brand-text">Michael McAlpin</span>
         </Navbar.Brand>
@@ -24,20 +26,23 @@ function NavigationBar({ currentPage, setCurrentPage }: Props) {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto align-items-center">
             <Nav.Link
-              onClick={() => setCurrentPage(Page.AboutMe)}
-              active={currentPage === Page.AboutMe}
+              as={Link}
+              to={`/${Page.AboutMe}`}
+              active={currentPath === Page.AboutMe}
             >
               About
             </Nav.Link>
             <Nav.Link
-              onClick={() => setCurrentPage(Page.Projects)}
-              active={currentPage === Page.Projects}
+              as={Link}
+              to={`/${Page.Projects}`}
+              active={currentPath === Page.Projects}
             >
               Projects
             </Nav.Link>
             <Nav.Link
-              onClick={() => setCurrentPage(Page.ContactMe)}
-              active={currentPage === Page.ContactMe}
+              as={Link}
+              to={`/${Page.ContactMe}`}
+              active={currentPath === Page.ContactMe}
             >
               Contact
             </Nav.Link>

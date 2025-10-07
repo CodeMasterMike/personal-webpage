@@ -1,27 +1,25 @@
-import { useState } from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import NavigationBar from "./components/NavigationBar";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import ContactMe from "./components/ContactMe";
-import { Page, type PageKey } from "./constants/page";
-
-//import "bootstrap/dist/css/bootstrap.min.css";
+import { Page } from "./constants/page";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState<PageKey>(Page.AboutMe);
-
   return (
-    <>
-      <NavigationBar
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
-      />
-
-      {currentPage === Page.AboutMe && <AboutMe />}
-      {currentPage === Page.Projects && <Projects />}
-      {currentPage === Page.ContactMe && <ContactMe />}
-    </>
+    <BrowserRouter basename="personal-webpage">
+      <NavigationBar />
+      <Routes>
+        <Route path={`/${Page.AboutMe}`} element={<AboutMe />} />
+        <Route path={`/${Page.Projects}`} element={<Projects />} />
+        <Route path={`/${Page.ContactMe}`} element={<ContactMe />} />
+        <Route
+          path="*"
+          element={<Navigate to={`/${Page.AboutMe}`} replace />}
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

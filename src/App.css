@@ -1,3 +1,5 @@
+/* ===== About Me Page Styles ===== */
+
 .about-me {
 	padding-left: 1rem;
 	padding-right: 1rem;
@@ -12,6 +14,7 @@
 	font-weight: 700;
 }
 
+/* Technology list layout */
 .tech-list {
 	gap: 0.5rem;
 	margin-top: 0.5rem;
@@ -22,18 +25,21 @@
 	padding: 0.55rem 0.9rem;
 }
 
+/* Responsive design for smaller screens */
 @media (max-width: 576px) {
 	.about-me .card-title {
-		font-size: 1.25rem;
+		font-size: 1.25rem; /* Smaller title on mobile */
 	}
 }
 
-/* Navbar styles */
+/* ===== Navigation Bar Styles ===== */
+
 .site-navbar {
-	background: #ffffffcc; /* subtle translucent white */
+	background: #ffffffcc;
 	backdrop-filter: blur(6px);
 	box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
+
 .site-navbar .brand-logo {
 	display: inline-flex;
 	align-items: center;
@@ -45,10 +51,12 @@
 	color: white;
 	font-weight: 700;
 }
+
 .site-navbar .brand-text {
 	font-weight: 600;
 	letter-spacing: 0.2px;
 }
+
 .site-navbar .nav-link {
 	color: rgba(0,0,0,0.75);
 	margin-left: 0.5rem;
@@ -56,21 +64,25 @@
 	padding: 0.35rem 0.5rem;
 	border-radius: 6px;
 }
+
 .site-navbar .nav-link:hover {
 	background: rgba(13,110,253,0.06);
 }
+
 .site-navbar .nav-link.active {
 	color: #0d6efd !important;
 	background: rgba(13,110,253,0.08);
 	box-shadow: inset 0 -2px 0 #0d6efd;
 }
 
-/* Contact page styles */
+/* ===== Contact Page Styles ===== */
+
 .contact-container {
 	max-width: 800px;
 	margin: 2rem auto;
 	padding: 0 1rem;
 }
+
 
 .contact-section {
 	background: white;
