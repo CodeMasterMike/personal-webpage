@@ -9,7 +9,7 @@ function Projects() {
           <Row xs={1} md={2} className="g-4">
             <Col key={1}>
               <Card className="h-100 shadow-sm">
-                <Card.Body>
+                <Card.Body className="d-flex flex-column">
                   <Card.Title>Quotidian</Card.Title>
                   <Card.Text className="text-muted">
                     WinForms desktop application for note-taking on readings,
@@ -31,8 +31,8 @@ function Projects() {
             </Col>
             <Col key={2}>
               <Card className="h-100 shadow-sm">
-                <Card.Body>
-                  <Card.Title>Drinki Poo</Card.Title>
+                <Card.Body className="d-flex flex-column">
+                  <Card.Title>Drinki-Poo</Card.Title>
                   <Card.Text className="text-muted">
                     (In progress) .NET Aspire application for tracking in-house
                     inventory of items, designed originally for use with
@@ -53,7 +53,7 @@ function Projects() {
             </Col>
             <Col key={3}>
               <Card className="h-100 shadow-sm">
-                <Card.Body>
+                <Card.Body className="d-flex flex-column">
                   <Card.Title>Personal Webpage</Card.Title>
                   <Card.Text className="text-muted">
                     TypeScript, React, and React-Bootstrap based personal
