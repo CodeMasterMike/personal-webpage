@@ -75,6 +75,7 @@ function AboutMe() {
                 <ListGroup.Item>
                   🏈 Rooting for the Buffalo Bills
                 </ListGroup.Item>
+                <ListGroup.Item>🎢 Riding roller coasters</ListGroup.Item>
               </ListGroup>
             </Card.Body>
           </Card>
