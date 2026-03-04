@@ -10,6 +10,28 @@ function Projects() {
             <Col key={1}>
               <Card className="h-100 shadow-sm">
                 <Card.Body className="d-flex flex-column">
+                  <Card.Title>Krampus Bot (Discord)</Card.Title>
+                  <Card.Text className="text-muted">
+                    Krampus themed Discord bot that monitors server messages and delivers
+                    customizable reactions, encounters, and other fun features.
+                    Built with TypeScript.
+                  </Card.Text>
+                  <div className="mt-auto">
+                    <Button
+                      variant="outline-primary"
+                      href="https://github.com/CodeMasterMike/krampus-discord-bot"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View Repository
+                    </Button>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col key={2}>
+              <Card className="h-100 shadow-sm">
+                <Card.Body className="d-flex flex-column">
                   <Card.Title>Quotidian</Card.Title>
                   <Card.Text className="text-muted">
                     WinForms desktop application for note-taking on readings,
@@ -29,7 +51,7 @@ function Projects() {
                 </Card.Body>
               </Card>
             </Col>
-            <Col key={2}>
+            <Col key={3}>
               <Card className="h-100 shadow-sm">
                 <Card.Body className="d-flex flex-column">
                   <Card.Title>Drinki-Poo</Card.Title>
@@ -51,7 +73,7 @@ function Projects() {
                 </Card.Body>
               </Card>
             </Col>
-            <Col key={3}>
+            <Col key={4}>
               <Card className="h-100 shadow-sm">
                 <Card.Body className="d-flex flex-column">
                   <Card.Title>Personal Webpage</Card.Title>

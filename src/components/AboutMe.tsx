@@ -12,12 +12,13 @@ import { Page } from "../constants/page";
 
 function AboutMe() {
   const tech = [
-    ".NET 8/9",
+    ".NET 8/9/10",
     ".NET Xamarin and MAUI",
     "Entity Framework",
     "SQL",
     "TypeScript",
     "React",
+    "Angular",
     "Node.js",
     "Electron",
     "Azure",
